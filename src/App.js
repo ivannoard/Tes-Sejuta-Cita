@@ -11,7 +11,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/favorite' element={<Favorite />} />
-        <Route path='*' element={'Not Found'} />
       </Routes>
     </div>
   );

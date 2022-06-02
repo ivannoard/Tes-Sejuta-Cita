@@ -10,7 +10,7 @@ const Search = () => {
 
   const handleSearch = (e) => {
     e.preventDefault()
-    setResult(dataBooks.filter(item => item.title.toLowerCase() === book.toLowerCase()))
+    setResult(dataBooks.filter(item => item.title.toLowerCase() === book.toLowerCase() || item.authors[0].toLowerCase() === book.toLowerCase()))
   }
 
   useEffect(() => {
